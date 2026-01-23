@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
+/*using System.Security.Cryptography.X509Certificates;
 using System.Xml.Serialization;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -284,4 +284,4 @@ namespace BankProject
             public int id { get; set; }
         }
     }
-}
+}*/

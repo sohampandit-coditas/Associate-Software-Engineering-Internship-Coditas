@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\bankproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\bankproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\employee_leave_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\employee_leave_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +22,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Employee_Leave_Manager.cs",
+              "DocumentMoniker": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Employee_Leave_Manager.cs",
+              "RelativeDocumentMoniker": "CSharp\\CSharp\\Employee_Leave_Manager.cs",
+              "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Employee_Leave_Manager.cs",
+              "RelativeToolTip": "CSharp\\CSharp\\Employee_Leave_Manager.cs",
+              "ViewState": "AgIAAKQAAAAAmpmZmZkqwFwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T05:48:04.768Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Classes.cs",
+              "DocumentMoniker": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Classes.cs",
+              "RelativeDocumentMoniker": "CSharp\\CSharp\\Classes.cs",
+              "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Classes.cs",
+              "RelativeToolTip": "CSharp\\CSharp\\Classes.cs",
+              "ViewState": "AgIAAF8AAAAAJDMzMzMAwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T06:13:44.438Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BankProject.cs",
-              "DocumentMoniker": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\BankProject.cs",
-              "RelativeDocumentMoniker": "CSharp\\CSharp\\BankProject.cs",
-              "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\BankProject.cs*",
-              "RelativeToolTip": "CSharp\\CSharp\\BankProject.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T07:09:37.211Z",
+              "DocumentIndex": 2,
+              "Title": "CSharp.csproj",
+              "DocumentMoniker": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\CSharp.csproj",
+              "RelativeDocumentMoniker": "CSharp\\CSharp\\CSharp.csproj",
+              "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\CSharp.csproj",
+              "RelativeToolTip": "CSharp\\CSharp\\CSharp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-23T07:21:21.02Z",
               "EditorCaption": ""
             }
           ]
