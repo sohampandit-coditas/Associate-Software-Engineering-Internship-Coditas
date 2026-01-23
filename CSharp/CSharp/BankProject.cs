@@ -17,11 +17,11 @@ namespace BankProject
             Console.WriteLine();
             Console.WriteLine("Enter the password: ");
             Console.ForegroundColor = Console.BackgroundColor;
-            int password = Convert.ToInt32(Console.ReadLine());
+            string password = Console.ReadLine();
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.White;
             int mainMenuChoice;
-            if (userName == "Soham" && designation == "manager")
+            if (userName == "Soham" && designation == "manager" && password=="TAB")
             {
                 do
                 {
