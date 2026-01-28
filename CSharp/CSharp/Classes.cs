@@ -1,5 +1,5 @@
 using System;
-namespace LeaveTrackerApp
+namespace CSharp
 {
     public class Employee
     {
@@ -94,6 +94,86 @@ namespace LeaveTrackerApp
             else
             {
                 Console.WriteLine("Cannot apply for leaves!! Leave Balance: " + employee.leaveBalance);
+            }
+        }
+    }
+
+    public class Patient
+    {
+        string name;
+        int age;
+        string symptom;
+
+        public void SetName(string name)
+        {
+            this.name = name;
+        }
+
+        public void SetAge(int age)
+        {
+            this.age = age;
+        }
+
+        public void SetSymptom(string symptom, string description="")
+        {
+            this.symptom = symptom;
+
+            if (description != "")
+            {
+                symptom += "-" + description;
+            }
+        }
+
+        public string GetName()
+        {
+            return name;
+        }
+
+        public int GetAge() 
+        { 
+            return age;
+        }
+
+        public string GetSymptom()
+        {
+            return symptom;
+        }
+    }
+
+    public class MedicalBot
+    {
+        public void StartConsultation(Patient patient)
+        {
+            string advice;
+            AnalyzeSymptoms(patient.GetSymptom(), patient, out advice);
+            Console.WriteLine(advice);
+        }
+
+        private void AnalyzeSymptoms(string symptom,Patient patient, out string advice)
+        {
+            bool IsSevere()
+            {
+                return symptom.ToLower().Contains("chest") || symptom.ToLower().Contains("breathing");
+            }
+
+            bool IsEmergency()
+            {
+                return patient.GetAge() > 60 && IsSevere();
+            }
+
+            if (IsSevere())
+            {
+                advice = "This is a serious cause of concern, please report to your doctor as soon as possible!!";
+            }
+
+            if (IsEmergency())
+            {
+                advice = "This is an emergency, please visit your hospital at the earliest!!!!";
+            }
+
+            else
+            {
+                advice = "This is a mild disease, take medications and rest!";
             }
         }
     }
