@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 namespace CSharp
 {
     public class Employee
@@ -177,5 +178,158 @@ namespace CSharp
             }
         }
     }
+
+    class FoodItem
+    {
+        private double basePrice;
+        protected double price
+        {
+            get { return basePrice; }
+            set
+            {
+                if (value > 0)
+                {
+                    price = value;
+                }
+            }
+        }
+        public string name { get; private set; }
+
+        public FoodItem(string name,double price)
+        {
+            this.name = name;
+            basePrice = price;
+        }
+        public virtual double CalculateBasePrice()
+        {
+            return basePrice;
+        }
+
+    }
+
+    class Veg : FoodItem
+    {
+        public Veg(string name, double price, string type="Veg") : base(name, price)
+        {
+        }
+
+        public override double CalculateBasePrice()
+        {
+            return price + (price * 0.05);
+        }
+    }
+
+    class NonVeg : FoodItem
+    {
+        public NonVeg(string name, double price, string type="Non Veg") : base(name, price)
+        {
+        }
+
+        public override double CalculateBasePrice() 
+        {
+            return price + (price * 0.1);
+        }
+    }
+
+    class Beverage : FoodItem
+    {
+        public Beverage(string name, double price, string type="Beverage") : base(name, price)
+        {
+        }
+
+        public override double CalculateBasePrice()
+        {
+            return price;
+        }
+    }
+
+    class Menu
+    {
+        private List<FoodItem> items = new List<FoodItem>();
+
+        public void AddItem(FoodItem item)
+        {
+            items.Add(item);
+        }
+
+        public FoodItem this[int index]
+        {
+            get { return items[index]; }
+        }
+
+        public void Show()
+        {
+            for(int i=0; i<items.Count; i++)
+            {
+                Console.WriteLine($"{i}.{items[i].name},{items[i].CalculateBasePrice()}");
+            }
+        }
+    }
+
+    class Cart
+    {
+        private List<FoodItem> cartItems = new List<FoodItem>();
+        public void AddItem(FoodItem item)
+        {
+            cartItems.Add(item);
+        }
+
+        public void AddItem(FoodItem item, int quantity)
+        {
+            for(int i = 0; i < quantity; i++)
+            {
+                cartItems.Add(item);
+            }
+        }
+
+        public double GetTotal()
+        {
+            double total = 0;
+            foreach (FoodItem item in cartItems) 
+            {
+                total += item.CalculateBasePrice();
+            }
+            return total;
+        }
+    }
+
+    public class Zomato
+    {
+        private Menu menu;
+        private Cart cart;
+
+        public Zomato()
+        {
+            menu = new Menu();
+            cart = new Cart();
+            LoadMenu();
+        }
+        public void LoadMenu() 
+        {
+            menu.AddItem(new Veg("Paneer Pasanda", 200));
+            menu.AddItem(new NonVeg("Chicken Wings", 400));
+            menu.AddItem(new Beverage("Coca Cola", 100));
+        }
+
+        public void ShowMenu()
+        {
+            menu.Show();
+        }
+
+        public void AddToCart(int menuIndex)
+        {
+            cart.AddItem(menu[menuIndex]);
+        }
+
+        public void AddToCart(int menuIndex, int quantity)
+        {
+            cart.AddItem(menu[menuIndex], quantity);
+        }
+
+        public double GetFinalAmount()
+        {
+            return cart.GetTotal();
+        }
+    } 
 }
 
