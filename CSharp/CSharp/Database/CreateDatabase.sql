@@ -1,0 +1,13 @@
+﻿CREATE DATABASE StudentManagement;
+GO
+
+USE StudentManagement;
+GO
+
+CREATE TABLE Students(
+	Id INT PRIMARY KEY,
+	Name VARCHAR(100) NOT NULL,
+	Age INT NOT NULL,
+	Email VARCHAR(150) NOT NULL,
+	EnrollmentDate DATETIME DEFAULT SYSDATETIME());
+GO
