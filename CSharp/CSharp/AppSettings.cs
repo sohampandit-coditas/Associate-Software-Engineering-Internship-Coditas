@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+﻿/*using Microsoft.Data.SqlClient;
 public class App
 {
    public static void Main(string[] args)
@@ -54,4 +54,4 @@ public class App
             }
         }
     }
-}
+}*/

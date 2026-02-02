@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+﻿/*using Microsoft.Data.SqlClient;
 public class StudentManagement
 {
     private readonly string _connectionString;
@@ -47,4 +47,4 @@ public class StudentManagement
         cmd.Parameters.AddWithValue("@Id", id);
         cmd.ExecuteNonQuery();
     }
-}
+}*/

@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\modules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\modules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\AppSettings.cs",
+              "RelativeDocumentMoniker": "CSharp\\CSharp\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\AppSettings.cs",
+              "RelativeToolTip": "CSharp\\CSharp\\AppSettings.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwDgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T08:12:07.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Classes.cs",
+              "DocumentMoniker": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Classes.cs",
+              "RelativeDocumentMoniker": "CSharp\\CSharp\\Classes.cs",
+              "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Classes.cs",
+              "RelativeToolTip": "CSharp\\CSharp\\Classes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T06:08:52.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Modules.cs",
+              "DocumentMoniker": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Modules.cs",
+              "RelativeDocumentMoniker": "CSharp\\CSharp\\Modules.cs",
+              "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Modules.cs",
+              "RelativeToolTip": "CSharp\\CSharp\\Modules.cs",
+              "ViewState": "AgIAAAUAAACgMjMzMzMrwAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T06:12:08.352Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -7,7 +7,7 @@ namespace CSharp
         internal string name;
         private int age;
         public string type;
-        internal int leaveBalance=30;
+        internal int leaveBalance = 30;
         private static int allowedLeaves = 30;
 
         public void SetName(Employee employee)
@@ -115,7 +115,7 @@ namespace CSharp
             this.age = age;
         }
 
-        public void SetSymptom(string symptom, string description="")
+        public void SetSymptom(string symptom, string description = "")
         {
             this.symptom = symptom;
 
@@ -130,8 +130,8 @@ namespace CSharp
             return name;
         }
 
-        public int GetAge() 
-        { 
+        public int GetAge()
+        {
             return age;
         }
 
@@ -150,7 +150,7 @@ namespace CSharp
             Console.WriteLine(advice);
         }
 
-        private void AnalyzeSymptoms(string symptom,Patient patient, out string advice)
+        private void AnalyzeSymptoms(string symptom, Patient patient, out string advice)
         {
             bool IsSevere()
             {
@@ -195,7 +195,7 @@ namespace CSharp
         }
         public string name { get; private set; }
 
-        public FoodItem(string name,double price)
+        public FoodItem(string name, double price)
         {
             this.name = name;
             basePrice = price;
@@ -209,7 +209,7 @@ namespace CSharp
 
     class Veg : FoodItem
     {
-        public Veg(string name, double price, string type="Veg") : base(name, price)
+        public Veg(string name, double price, string type = "Veg") : base(name, price)
         {
         }
 
@@ -221,11 +221,11 @@ namespace CSharp
 
     class NonVeg : FoodItem
     {
-        public NonVeg(string name, double price, string type="Non Veg") : base(name, price)
+        public NonVeg(string name, double price, string type = "Non Veg") : base(name, price)
         {
         }
 
-        public override double CalculateBasePrice() 
+        public override double CalculateBasePrice()
         {
             return price + (price * 0.1);
         }
@@ -233,7 +233,7 @@ namespace CSharp
 
     class Beverage : FoodItem
     {
-        public Beverage(string name, double price, string type="Beverage") : base(name, price)
+        public Beverage(string name, double price, string type = "Beverage") : base(name, price)
         {
         }
 
@@ -259,7 +259,7 @@ namespace CSharp
 
         public void Show()
         {
-            for(int i=0; i<items.Count; i++)
+            for (int i = 0; i < items.Count; i++)
             {
                 Console.WriteLine($"{i}.{items[i].name},{items[i].CalculateBasePrice()}");
             }
@@ -276,7 +276,7 @@ namespace CSharp
 
         public void AddItem(FoodItem item, int quantity)
         {
-            for(int i = 0; i < quantity; i++)
+            for (int i = 0; i < quantity; i++)
             {
                 cartItems.Add(item);
             }
@@ -285,7 +285,7 @@ namespace CSharp
         public double GetTotal()
         {
             double total = 0;
-            foreach (FoodItem item in cartItems) 
+            foreach (FoodItem item in cartItems)
             {
                 total += item.CalculateBasePrice();
             }
@@ -304,7 +304,7 @@ namespace CSharp
             cart = new Cart();
             LoadMenu();
         }
-        public void LoadMenu() 
+        public void LoadMenu()
         {
             menu.AddItem(new Veg("Paneer Pasanda", 200));
             menu.AddItem(new NonVeg("Chicken Wings", 400));
@@ -330,6 +330,80 @@ namespace CSharp
         {
             return cart.GetTotal();
         }
-    } 
+    }
+
+    public class Modules
+    {
+        public class Module_3
+        {
+            public class Student
+            {
+                private int _id { get; set; }
+                private string _name { get; set; }
+                private double _marksObtained { get; set; }
+                private double _percentage { get; set; }
+                private bool _isPassed { get; set; }
+
+                public Student(int id, string name)
+                {
+                    this._id = id;
+                    this._name = name;
+                    _marksObtained = 0;
+                    _percentage = 0;
+                    _isPassed = false;
+                }
+
+                private void CalculatePercentage(double maxMarks)
+                {
+                    _percentage = (_marksObtained / maxMarks) * 100;
+                }
+
+                private void DeterminePassStatus(double passPercentage)
+                {
+                    _isPassed = _percentage > passPercentage;
+                }
+
+                private void SetMarks(double marks, double maxMarks, double passPercentage)
+                {
+                    _marksObtained = marks;
+                    CalculatePercentage(maxMarks);
+                    DeterminePassStatus(passPercentage);
+                }
+
+                private void Display()
+                {
+                    Console.WriteLine($"ID: {_id}");
+                    Console.WriteLine($"Name: {_name}");
+                    Console.WriteLine($"Marks: {_marksObtained}");
+                    Console.WriteLine($"Percentage: {_percentage}");
+                    Console.WriteLine(_isPassed ? "Status: Pass" : "Status: Fail");
+                }
+
+                private bool CheckId(int id)
+                {
+                    return _id == id;
+                }
+
+                public void Perform(string action, double marks = 0, double maxMarks = 0, double passPercentage = 0)
+                {
+                    switch (action.ToLower())
+                    {
+                        case "enter marks":
+                            SetMarks(marks, maxMarks, passPercentage);
+                            break;
+                        case "display":
+                            Display();
+                            break;
+                    }
+                }
+
+                public bool IsId(int id)
+                {
+                    return CheckId(id);
+                }
+
+            }
+        }
+    }
 }
 
