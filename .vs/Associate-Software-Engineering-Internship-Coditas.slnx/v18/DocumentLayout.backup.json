@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\database\\createdatabase.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\studentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1F308DF-CF07-F790-75CD-5F3B56AA916E}|CSharp\\CSharp\\CSharp.csproj|c:\\users\\coditas-admin\\source\\repos\\associate-software-engineering-internship-coditas\\csharp\\csharp\\zomato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,20 +52,20 @@
               "RelativeDocumentMoniker": "CSharp\\CSharp\\StudentManagement.cs",
               "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\StudentManagement.cs",
               "RelativeToolTip": "CSharp\\CSharp\\StudentManagement.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAuwB8AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-30T06:22:16.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AppSettings.cs",
               "DocumentMoniker": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\AppSettings.cs",
               "RelativeDocumentMoniker": "CSharp\\CSharp\\AppSettings.cs",
               "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\AppSettings.cs",
               "RelativeToolTip": "CSharp\\CSharp\\AppSettings.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACIAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCIAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-30T06:17:32.858Z",
               "EditorCaption": ""
@@ -84,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Classes.cs",
               "DocumentMoniker": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Classes.cs",
               "RelativeDocumentMoniker": "CSharp\\CSharp\\Classes.cs",
               "ToolTip": "C:\\Users\\Coditas-Admin\\source\\repos\\Associate-Software-Engineering-Internship-Coditas\\CSharp\\CSharp\\Classes.cs",
               "RelativeToolTip": "CSharp\\CSharp\\Classes.cs",
-              "ViewState": "AgIAAAMBAAAAzszMzMwwwE8BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwv08BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T09:05:23.176Z",
               "EditorCaption": ""
@@ -105,8 +105,7 @@
               "RelativeToolTip": "CSharp\\CSharp\\Zomato.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAiwDQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T08:57:09.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T08:57:09.571Z"
             },
             {
               "$type": "Document",
@@ -118,8 +117,7 @@
               "RelativeToolTip": "CSharp\\CSharp\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T06:45:42.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T06:45:42.078Z"
             }
           ]
         }
