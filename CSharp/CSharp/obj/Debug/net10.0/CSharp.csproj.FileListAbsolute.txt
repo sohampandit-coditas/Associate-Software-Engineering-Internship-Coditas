@@ -62,3 +62,7 @@ C:\Users\Coditas-Admin\source\repos\Associate-Software-Engineering-Internship-Co
 C:\Users\Coditas-Admin\source\repos\Associate-Software-Engineering-Internship-Coditas\CSharp\CSharp\obj\Debug\net10.0\CSharp.pdb
 C:\Users\Coditas-Admin\source\repos\Associate-Software-Engineering-Internship-Coditas\CSharp\CSharp\obj\Debug\net10.0\CSharp.genruntimeconfig.cache
 C:\Users\Coditas-Admin\source\repos\Associate-Software-Engineering-Internship-Coditas\CSharp\CSharp\obj\Debug\net10.0\ref\CSharp.dll
+C:\Users\Coditas-Admin\source\repos\Associate-Software-Engineering-Internship-Coditas\CSharp\CSharp\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Coditas-Admin\source\repos\Associate-Software-Engineering-Internship-Coditas\CSharp\CSharp\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Coditas-Admin\source\repos\Associate-Software-Engineering-Internship-Coditas\CSharp\CSharp\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Coditas-Admin\source\repos\Associate-Software-Engineering-Internship-Coditas\CSharp\CSharp\bin\Debug\net10.0\Microsoft.Extensions.Logging.dll

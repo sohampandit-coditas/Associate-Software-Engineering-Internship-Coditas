@@ -1,5 +1,7 @@
+using Microsoft.Identity.Client;
 using System;
 using System.Runtime.CompilerServices;
+using System.Collections.Generic;
 namespace CSharp
 {
     public class Employee
@@ -403,6 +405,124 @@ namespace CSharp
                 }
 
             }
+
+
+        } 
+
+        public class Module_5
+        {
+            public abstract class LibraryItem
+            {
+                public int _itemId { get; set; }
+                protected string title {  get; set; }
+                public bool isAvailable { get; set; }
+                public LibraryItem(int itemId,string title) 
+                {
+                    this._itemId = itemId;
+                    this.title = title;
+                    isAvailable = true;
+                }
+
+                public void MarkAsBorrowed()
+                {
+                    isAvailable = false;
+                }
+
+                public void MarkAsReturned()
+                {
+                    isAvailable = true; 
+                }
+
+                public abstract string GetItemDetails();
+            }
+
+            public class book : LibraryItem
+            {
+                private string Author { get; set; }
+                public book(int  id, string title, string author):base(id, title) 
+                {
+                    Author = author;
+                }
+
+                public override string GetItemDetails()
+                {
+                    return $"Book:{title},Author:{Author},Available: {isAvailable}";
+                }
+            }
+
+            public class magazine : LibraryItem
+            {
+                private int issueNo { get; set; }
+
+                public magazine(int id, string title, int issueNo) : base(id, title) 
+                {
+                    this.issueNo = issueNo;
+                }
+
+                public override string GetItemDetails()
+                {
+                    return $"issueNo: {issueNo}, Magazine: {title}, Available: {isAvailable}";
+                }
+            }
+
+            public abstract class User
+            {
+                public int userId { get; set; }
+                public string Name { get; set; }
+                protected List<LibraryItem> borrowedItems;
+
+                protected User(int id, string name)
+                {
+                    userId = id;
+                    Name = name;
+                    borrowedItems = new List<LibraryItem>();
+                }
+
+                public IReadOnlyList<LibraryItem> BorrowedItems => borrowedItems.AsReadOnly();
+
+                public abstract int BorrowLimit { get; }
+
+                public virtual bool canBorrow()
+                {
+                    return borrowedItems.Count < BorrowLimit;
+                }
+
+                public void BorrowItem(LibraryItem item)
+                {
+                    if (!item.isAvailable)
+                    {
+                        Console.WriteLine("Item is not available!");
+                    }
+
+                    if (!canBorrow())
+                    {
+                        Console.WriteLine("Cannot Borrow!");
+                    }
+
+                    borrowedItems.Add(item);
+                    item.MarkAsBorrowed();
+                }
+
+                public void ReturnItem(LibraryItem item)
+                {
+                    if (borrowedItems.Remove(item))
+                    {
+                        item.MarkAsReturned();
+                    }
+                }
+            }
+                public class Student : User
+                {
+                    public Student(int userId, string name) : base(userId, name) { }
+                    public override int BorrowLimit =>3;
+                }
+
+                public class Faculty : User
+                {
+                    public Faculty(int userId,string name) : base(userId, name) { }
+                    public override int BorrowLimit => 5;
+                }
+            
         }
     }
 }
