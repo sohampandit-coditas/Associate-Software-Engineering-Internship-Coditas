@@ -274,7 +274,7 @@ namespace CSharp
         public void AddItem(FoodItem item)
         {
             cartItems.Add(item);
-        }
+        }  
 
         public void AddItem(FoodItem item, int quantity)
         {

@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Text;
 using CSharp;
@@ -145,10 +145,10 @@ namespace CSharp
             return false;
         }
 
-        static student FindStudent(student[] students,int count)
+        static student FindStudent(student[] students, int count)
         {
             int id = ReadInt("Enter student id: ");
-            for (int i = 0; i < count; i++) 
+            for (int i = 0; i < count; i++)
             {
                 if (students[i].IsId(id))
                 {
@@ -158,8 +158,8 @@ namespace CSharp
 
             Console.WriteLine("Student not found! ");
             return null;
-
-
+        }
+    
     public class Module_5
     {
         static List<Library> libraryItems = new List<Library>();
@@ -385,5 +385,5 @@ namespace CSharp
         }
     }
         
-}
+}*/
 
